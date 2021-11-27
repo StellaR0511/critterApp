@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Critter Room</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="critter_room.css">
+    <script src="critter_room.js"></script>
+    </head>
+<body class="centered-wrapper">
+<div class="container centered-content">
+<button id="logout" style = "font-family: 'Caveat Brush', cursive;" class=" btn btn-danger"><img src="twotone_logout_white_24dp.png" onclick="logout()"> Logout</button>
+	<center>
+		<h1 class="header">	
+			Critter Rooms	
+			<sup>
+				<img id="mailbox"src="blue-email-box-circle-png-transparent-icon-2.png">
+			</sup>
+		</h1>
+		<h3 class="color_white"></h3>
+		<div class="form-group input_div_room_page">
+			<label style="font-family: 'Montserrat', sans-serif; color: white; font-size: 20px;">#Add Room:</label>
+			<input style = "font-family: 'Raleway', sans-serif;" id="room_name" type="text" class="form-control" placeholder="#RoomName">
+		</div>
+		<button class="btn login_button" onclick="addRoom()">#Add Room</button>
+
+		<h3 class="color_white" style="font-family: 'Montserrat', sans-serif;">#TRENDINGROOMS</h3>
+
+		<div id="output"></div>
+		
+	</center>
+</div>
+<script src="kwitter_room.js"></script>
+</body>
+</html>

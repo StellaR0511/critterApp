@@ -8,6 +8,8 @@ body
 {
 	background: rgb(215,170,255);
 	background: radial-gradient(circle, rgba(215,170,255,1) 0%, rgba(163,60,255,1) 50%, rgba(215,170,255,1) 100%);
+    max-width: max-content;
+margin: auto;
 }
 
 .header
@@ -17,25 +19,14 @@ body
 	font-size: 90px;
 	margin-top: 80px;
 }
-.header img
-{
-	width: 80px;margin-left: -15px;
-}
 
-.login_div
-{
-	background: rgb(255, 255, 255);float: none;border-radius: 15px;
-	
-}
 
-.logo
-{
-	width: 120px;margin-top: 30px;border-radius: 20px;
-}
 
-#login_button
+
+
+.login_button
 {
-	width: 80%;border-radius: 15px;
+	width: 20%;border-radius: 15px;
 	background-color:mediumpurple;
 	border-color: mediumpurple;
 	font-family: 'Caveat Brush', cursive;
