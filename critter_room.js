@@ -1,17 +1,16 @@
-// Your web app's Firebase configuration
-var firebaseConfig = {
-    apiKey: "AIzaSyDYqSf2W15mXc0pLTCoSUCmdWk1jMQHxKs",
-    authDomain: "crittercodeproject.firebaseapp.com",
-    projectId: "crittercodeproject",
-    storageBucket: "crittercodeproject.appspot.com",
-    messagingSenderId: "965654398887",
-    appId: "1:965654398887:web:59da6b52489770530e5882"
+firebaseConfig = {
+    apiKey: "AIzaSyD8xYhLzPnOAx6IUkYDW43mjqZUgY03i7k",
+    authDomain: "crittercodefixed.firebaseapp.com",
+    databaseURL: "https://crittercodefixed-default-rtdb.firebaseio.com",
+    projectId: "crittercodefixed",
+    storageBucket: "crittercodefixed.appspot.com",
+    messagingSenderId: "65265656456",
+    appId: "1:65265656456:web:3c4d6fe7d7f8e356f7f53d"
   };
   
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  user_name = localStorage.getItem("user_name");
-document.getElementById("user_name").innerHTML = "Welcome "+user_name;
+    firebase.initializeApp(firebaseConfig);
+user_name = localStorage.getItem("user_name");
+document.getElementById("user_name").innerHTML = "Welcome to Critter, "+user_name+"!";
 
   function addRoom(){
     room_name = document.getElementById("room_name").value;
@@ -19,7 +18,7 @@ document.getElementById("user_name").innerHTML = "Welcome "+user_name;
           purpose: "adding room name"
     });
     localStorage.setItem("room_name",room_name);
-    window.location = "kwitter_page.html";
+    window.location = "critter_page.html";
 }
   
 function getData() {
@@ -34,12 +33,12 @@ function getData() {
 
     });});}
 getData();
-
-function addRoom(name) {
-    console.log(name);
-    localStorage.setItem("room_name",name);
+function redirectToRoomName(name){
+    console.log(room_name);
+    localStorage.setItem("room_name",room_name);
     window.location = "critter_page.html";
 }
+
 function logout(){
     localStorage.removeItem("user_name");
     localStorage.removeItem("room_name");

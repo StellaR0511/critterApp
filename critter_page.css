@@ -8,8 +8,6 @@ body
 {
 	background: rgb(215,170,255);
 	background: radial-gradient(circle, rgba(215,170,255,1) 0%, rgba(163,60,255,1) 50%, rgba(215,170,255,1) 100%);
-    max-width: max-content;
-margin: auto;
 }
 
 .header
@@ -18,29 +16,31 @@ margin: auto;
 	font-family: 'Caveat Brush', cursive;
 	font-size: 90px;
 	margin-top: 80px;
-	
+}
+.header img
+{
+	width: 80px;margin-left: -15px;
 }
 
-
-
-
-
-.login_button
+.login_div
 {
-	width: 20%;border-radius: 15px;
-	background-color:mediumpurple;
-	border-color: mediumpurple;
-	font-family: 'Caveat Brush', cursive;
-	font-size: 25px;
-	color:white;
+	background: rgba(255,255,255,0.8);float: none;border-radius: 15px;
+}
+
+.logo
+{
+	width: 80px;margin-top: 30px;border-radius: 40px;
+}
+
+#login_button
+{
+	width: 80%;border-radius: 15px;
 }
 
 .room_name
 {
 	cursor: pointer;
 	font-size: 20px;
-	font-family: 'Montserrat', sans-serif;
-	background-color: white;
 }
 
 
@@ -52,8 +52,9 @@ margin: auto;
 
 #output
 {
-	padding: 10px; width:80%; 	background-color: white;
-	;border-radius: 15px;
+	padding: 10px; width:80%;
+	background:white;
+	border-radius: 15px;
 }
 
 .input_div_room_page
@@ -69,8 +70,12 @@ margin: auto;
 
 .input_div_message_page
 {
-	position: fixed;bottom: 0px;width: 100%;background: rgba(255,255,255,0.8);
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background: white;
 }
+
 .input_div_message_page label
 {
 	color: black;
@@ -91,21 +96,27 @@ margin: auto;
 
 .user_tick
 {
-	width:20px;
+	width:27px;
 }
 .message_h4
 {
-	padding-left:5px;color:grey;
+	padding-left:5px;color:black;font-weight: bold;
+	font-family: 'Raleway', sans-serif;
 }
-#mailbox{
-	width: 60px;
-	margin-left:10px;
-	margin-top: 30px;
-
+#sendButton{
+	width: 30%;
+	border-radius: 15px;
+	background-color:mediumpurple;
+	border-color: mediumpurple;
+	font-family: 'Caveat Brush', cursive;
+	font-size: 25px;
+	color:white;
 }
-#user_name{
-	color: white;
-	font-family: "Caveat Brush", cursive;
-	font-size:35px;
-	margin-bottom: 40px;
+#msg{
+	color:black;
+	font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+}
+#like_button{
+	background-color: darkmagenta;
 }

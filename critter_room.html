@@ -2,19 +2,22 @@
 <html>
     <head>
         <title>Critter Room</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
         <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    
     <link rel="stylesheet" type="text/css" href="critter_room.css">
-    <script src="critter_room.js"></script>
     </head>
-<body class="centered-wrapper">
-<div class="container centered-content">
-<button id="logout" style = "font-family: 'Caveat Brush', cursive;" class=" btn btn-danger"><img src="twotone_logout_white_24dp.png" onclick="logout()"> Logout</button>
+<body>
+<div class="container">
+	<button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()"> Logout</button>	
 	<center>
 		<h1 class="header">	
 			Critter Rooms	
@@ -22,19 +25,24 @@
 				<img id="mailbox"src="blue-email-box-circle-png-transparent-icon-2.png">
 			</sup>
 		</h1>
-		<h3 class="color_white"></h3>
+		<h3 class="color_white" id="user_name"></h3>
 		<div class="form-group input_div_room_page">
 			<label style="font-family: 'Montserrat', sans-serif; color: white; font-size: 20px;">#Add Room:</label>
 			<input style = "font-family: 'Raleway', sans-serif;" id="room_name" type="text" class="form-control" placeholder="#RoomName">
+			<div id = "warning" style="font-size: 20px; color:red; font-weight: bold;"></div>
 		</div>
 		<button class="btn login_button" onclick="addRoom()">#Add Room</button>
 
 		<h3 class="color_white" style="font-family: 'Montserrat', sans-serif;">#TRENDINGROOMS</h3>
 
 		<div id="output"></div>
-		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
 	</center>
 </div>
-<script src="kwitter_room.js"></script>
+<script src="critter_room.js"></script>
 </body>
 </html>
